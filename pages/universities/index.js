@@ -230,7 +230,6 @@ University.getInitialProps = async (ctx) => {
     const { user_id, token } = await nextCookie(ctx);
     props.user_id = user_id;
     props.token = token;
-    console.log(token)
     return props;
 }
 export default withAuthSync(University);

@@ -5,7 +5,7 @@ import nextCookie from "next-cookies";
 
 function login(token, user_id, user_name = "") {
   Cookies.set("token", token, { path: "/" });
-
+  
   Cookies.set("user_id", user_id, { path: "/" });
   Cookies.set("user_name", user_name, { path: "/" });
   localStorage.setItem("user_id", user_id);

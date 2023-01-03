@@ -35,7 +35,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 const token = Cookies.get("token"); // => get token
 
 const config = {
-  headers: { Authorization: "token " + token }
+  headers: { Authorization: "Bearer " + token }
 };
 
 // mapping the icons to the data set

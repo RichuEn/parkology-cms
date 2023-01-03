@@ -514,6 +514,7 @@ export default class AsyncData {
   }
 
   async fetchQuiz(token, id) {
+    alert(token)
     let config = {
       headers: {
         'Content-Type': 'application/json',

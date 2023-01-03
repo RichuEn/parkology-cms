@@ -1,7 +1,7 @@
 import Cookies from "js-cookie";
 let id = Cookies.get("user_id");
 let token = Cookies.get("token");
-
+console.log(id,token)
 export const FETCH_USERS = `${process.env.api}admin/${id}/users`;
 
 export const FETCH_QUIZZES = `${process.env.api}admin/quiz`;

@@ -63,11 +63,11 @@ export default function SignIn() {
 
     try {
       const response = await AsyncData.loginData(bodyFormData);
+      let user_id = response.data.data.id;
+      let token = response.data.data.token;
 
-      let user_id = response.data.id;
-      let token = response.data.token;
-      document.cookie = `token=${response.data.token}; path=/`;
-      document.cookie = `user_id=${response.data.id}; path=/`;
+      document.cookie = `token=${response.data.data.token}; path=/`;
+      document.cookie = `user_id=${response.data.data.id}; path=/`;
       login(token, user_id, "the username");
     
     } catch (e) {
