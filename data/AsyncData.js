@@ -288,7 +288,10 @@ export default class AsyncData {
 
   static async getDashboardData(admin_id, token) {
     let config = {
-      headers: { Authorization: "token " + token },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer '+token,
+    },
     };
 
     const data = await axios.get(

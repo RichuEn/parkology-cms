@@ -22,7 +22,7 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>CMS</title>
+          <title> Parkology CMS</title>
         </Head>
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

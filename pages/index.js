@@ -57,7 +57,7 @@ Dashboard.getInitialProps = async (ctx) => {
   try {
     const response = await AsyncData.getDashboardData(user_id, token);
 
-    props.data = response.data;
+    props.data = response.data.data;
     props.user_id = user_id;
     props.token = token;
   } catch (error) {
